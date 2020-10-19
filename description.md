@@ -7,17 +7,17 @@ Start by mapping your idea out in pseudocode, then writing the program. You will
 
 ### Criteria
 Your program should include a minimum of: 
-* 1 list (3 or more elements)
-* manipulation of the list in some way
-* 1 while loop
-* 1 conditional (if-elif-else)
-* 1 for loop
-* 1 function that does something other than just print
-* function should be called at least 2x
-* 2 types of variables
-* Try/except
-* Comments - use them!
-* Collaborators (as usual)
+* #1 list (3 or more elements)
+* #manipulation of the list in some way
+* #1 while loop
+* #1 conditional (if-elif-else)
+* #1 for loop
+* #1 function that does something other than just print
+* #function should be called at least 2x
+* #2 types of variables
+* #Try/except
+* #Comments - use them!
+* #Collaborators (as usual)
 
 ### Functionality
 Your program should:
