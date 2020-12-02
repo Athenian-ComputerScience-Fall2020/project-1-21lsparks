@@ -2,21 +2,12 @@
 #  Claryse Adams (tutor)
 
 
-class Plant:
-    def __init__(self, name, soil, sun, season, water, typ):
-        self.name = name
-        self.soil = soil
-        self. sun = sun
-        self.season = season
-        self.water = water
-        self.typ = typ
 
-
-radish = Plant("radish", "acid", "high sun", "winter", "high water", "annual")
-lettuce = Plant("lettuce", "acid", "high sun", "winter", "high water", "annual")
-carrot = Plant("carrot", "acid", "high sun", "winter", "high water", "annual")
-corn = Plant("corn", "acid", "high sun", "winter", "high water", "annual")
-beans = Plant("beans", "acid", "low sun", "winter", "high water", "annual")
+radish = ["radish", "acid", "high sun", "winter", "high water", "annual"]
+lettuce = ["lettuce", "acid", "high sun", "winter", "high water", "annual"]
+carrot = ["carrot", "acid", "high sun", "winter", "high water", "annual"]
+corn = ["corn", "acid", "high sun", "winter", "high water", "annual"]
+beans = ["beans", "acid", "low sun", "winter", "high water", "annual"]
 
 plantlist = []
 plantlist.append(radish)
@@ -43,29 +34,29 @@ plantwater = input("If high water, write 'high water'")
 while plantwater != "high water" and plantwater != "low water":
     plantwater = input("No. Try Again:")
 
-plant = Plant("sample", plantsoil, plantsun, plantseason, plantwater, planttyp)
+plant = ["sample", plantsoil, plantsun, plantseason, plantwater, planttyp]
 plantfound = False
 
 for p in plantlist:
     x = p
-    if p.soil == plant.soil:
-        if p.sun == plant.sun:
-            if p.season == plant.season:
-                if p.water == plant.water:
-                    if p.typ == plant.typ:
+    if p[1] == plant[1]:
+        if p[2] == plant[2]:
+            if p[3] == plant[3]:
+                if p[4] == plant[4]:
+                    if p[5] == plant[5]:
                         plantfound = True
-                        print(f"Great! '{x.name}' matches your search!")
+                        print(f"Great! '{x[0]}' matches your search!")
 if plantfound == False:
     print("Sorry! We have no plants that match your criteria, try again!")
 
 plantdict = {"corn":corn, "carrot":carrot, "radish":radish, "lettuce":lettuce, "beans":beans}
 pickme = input("If you would like a complete profile on any plant, input it's name")
 try:
-    print("soil: %s" % (plantdict[pickme]).soil)
-    print("sun: %s" % (plantdict[pickme]).sun)
-    print("season: %s" %(plantdict[pickme]).season)
-    print("water: %s" %(plantdict[pickme]).water)
-    print("type: %s" %(plantdict[pickme]).typ)
+    print("soil: %s" % (plantdict[pickme])[1])
+    print("sun: %s" % (plantdict[pickme])[2])
+    print("season: %s" %(plantdict[pickme])[3])
+    print("water: %s" %(plantdict[pickme])[4])
+    print("type: %s" %(plantdict[pickme])[5])
 
 except KeyError:
     print("Sorry, we didn't find anything for that!")
