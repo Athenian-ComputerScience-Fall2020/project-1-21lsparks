@@ -1,10 +1,21 @@
-# Pseudocode for this program
-(this can be in a flowchart, using bullet points, inserting a picture, etc)
+# Pseudocode for Plant Finder
 
-Below are templates for flowcharts and mardown. feel free to edit them - or delete them and do something else if you prefer.
+The program stores all of the information for the vegetables we are using in a list. It stores information about sun, water, soil, acidity and plant type (annual v. perennial)
+It will ask the user several questions about various aspects of the environment in whi ch the plant will live, as well as how much they can water it. 
+Then, the program will assign variables to the answer and will compare that variable to the information it already has stored about prospective plants. 
+The program will tell the user all of the mathces. If there are no matches, it will share that too. Once the results of that scan are shared, the user can 
+also ask to see all of the information that the program has stored on any specific plant. It does this using a dictionary 
 
 # Markdown
 
+it will store the information on each plant in a list, then store all of the plants in another list
+it will ask the user for inputs, then assign a new variable to each input, a while loop will be used after each input for potential errors, and will give negative messages as long as the inputs are invalid
+then the program will make a list with all of the variables holding the information it just stored from the user. 
+It will run a for loop with if statements, checking to make sure that all of the variables match, if it does, it will move onto the next if statement to 
+check the next variable. If there are options that match, they will be printed, if not, the program will print that
+it doesn't have any available options. 
+After one of these messages is printed, the user will get the chance to see all of the information on any of the plants they have stored. This will be printed using a try and except statement
+This will be done by recalling the dictionary, and printing each of the values
 
 ## Markdown
 This is a brief guide to Markdown. Click the edit button to see what to type and use the "Preview changes" tab to check your work as you go.
